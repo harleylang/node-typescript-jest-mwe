@@ -1,7 +1,13 @@
-const example = (val: string) => {
+const pigLatinTranslator = ({
+    word
+}:{
+    word: string;
+}) => {
 
-    return val;
+    let oink = word.slice(1) + word.slice(0,1) + 'eh';
+
+    return oink;
 
 };
 
-export default example;
+export default pigLatinTranslator;

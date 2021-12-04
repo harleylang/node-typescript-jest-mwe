@@ -3,15 +3,17 @@ import fx from '.';
 
 type Test = {
     case: string;
-    val: string;
+    args: {[key: string]: any};
     expect: any;
 };
 
 let tests: Test[] = [
     {
         case: 'a basic example',
-        val: 'testing',
-        expect: 'testing',
+        args: { 
+            word: 'testing'
+        },
+        expect: 'estingteh',
     }
 ]
 
@@ -22,7 +24,7 @@ for (let t = 0; t < tests.length; t++) {
 
     test(atest.case, () => {
 
-        let result = fx(atest.val);
+        let result = fx(atest.args as any);
 
         expect(result).toBe(atest.expect);
 

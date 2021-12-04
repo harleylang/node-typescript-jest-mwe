@@ -7,13 +7,14 @@
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "build": "tsc -p ./tsconfig.build.json",
-    "dev": "npm run build && node --loader ts-node/esm dist/app.js"
+    "dev": "npm run build && node --loader ts-node/esm dist/runner.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@babel/preset-env": "^7.16.4",
     "@babel/preset-typescript": "^7.16.0",
+    "@jest/types": "^27.4.2",
     "@types/node": "^16.11.11",
     "babel": "^6.23.0",
     "jest": "^27.4.3",
