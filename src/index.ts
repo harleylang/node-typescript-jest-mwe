@@ -1,5 +1,5 @@
 const pigLatinTranslator = ({
-    word
+    word,
 }:{
     word: string;
 }) => {
