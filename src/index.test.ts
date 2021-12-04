@@ -1,5 +1,5 @@
 import { test, expect } from '@jest/globals';
-import example from '.';
+import fx from '.';
 
 type Test = {
     case: string;
@@ -22,7 +22,7 @@ for (let t = 0; t < tests.length; t++) {
 
     test(atest.case, () => {
 
-        let result = example(atest.val);
+        let result = fx(atest.val);
 
         expect(result).toBe(atest.expect);
 
