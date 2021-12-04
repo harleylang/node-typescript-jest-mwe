@@ -11,4 +11,4 @@ A small boilerplate repository for mocking new typescript functions.
 `src/runner.ts` => A helper function required for `npm run dev`.
 * When `npm run dev` is called, the directory is transpiled and the runner is called.
 * The runner script will pass cli args to the function. 
-    * For example: `npm run dev -- word=testing` will pass the var `word` with the value `testing` into `dist/index.js`'s function `pigLatinTranslator()`.
+> For example: `npm run dev -- word=testing` will pass the var `word` with the value `testing` into `dist/index.js`'s function `pigLatinTranslator()`.
